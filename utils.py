@@ -9,3 +9,11 @@ def proste(el):
         if el % d == 0:
             return "Це число не є просте"
     return "Це число є просте"
+
+
+def power(num):
+    if num <= 0:
+        return False
+    while num % 5 == 0:
+        num //= 5
+    return num == 1
